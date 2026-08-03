@@ -7,20 +7,19 @@ public class Main {
         dog.setName("Cho co");
         dog.setAge(3);
         
-        System.out.println("name: " + dog.getName());
-        System.out.println("age: " + dog.getAge());
-        dog.makeSound();
-        dog.sleep();
-        
         // Tạo đối tượng Cat và gọi các phương thức của nó
         Cat cat = new Cat();
         cat.setName("Meo muop");
         cat.setAge(2);
-       
-        // Gọi các phương thức của đối tượng cat
-        System.out.println("name: " + cat.getName());
-        System.out.println("age: " + cat.getAge()); 
-        cat.makeSound();
-        cat.sleep();
+        // Tính đa hình
+        DongVat[] animals = {dog, cat}; // Tạo mảng các đối tượng Animal cat và dog
+
+        for (DongVat animal : animals) { // Duyệt qua từng đối tượng trong mảng và gọi các phương thức của nó
+            // ở lần lặp đầu tiên, animal sẽ là dog, ở lần lặp thứ hai, animal sẽ là cat
+            System.out.println("Name: " + animal.getName());
+            System.out.println("Age: " + animal.getAge());
+            animal.makeSound();
+            animal.sleep();
+        }
     }
 }
