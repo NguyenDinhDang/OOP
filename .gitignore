@@ -1,2 +1,14 @@
-./vscode
-/vscode/settings.json
+# VS Code
+.vvscode/
+.vscode/
+
+# Java build output
+bin/
+out/
+*.class
+
+# IDE / OS files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

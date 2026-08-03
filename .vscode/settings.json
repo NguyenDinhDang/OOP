@@ -1,3 +1,7 @@
 {
+    "java.project.sourcePaths": [
+        "src/main/java",
+        "exercises"
+    ],
     "java.debug.settings.onBuildFailureProceed": true
 }
