@@ -1,7 +1,20 @@
 {
     "java.project.sourcePaths": [
         "src/main/java",
-        "exercises"
+        "exercises",
+        "src/THProduct"
     ],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.project.outputPath": "bin",
+    "java.jdt.ls.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.13.10002-hotspot",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.13.10002-hotspot",
+            "default": true
+        }
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.debug.settings.console": "integratedTerminal",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "files.encoding": "utf8"
 }
