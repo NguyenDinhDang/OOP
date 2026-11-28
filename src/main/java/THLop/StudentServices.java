@@ -1,4 +1,5 @@
 package THLop;
+import java.util.Scanner;
 
 public class StudentServices {
 
@@ -36,6 +37,23 @@ public class StudentServices {
         if (!found) {
             System.out.println("Khong tim thay sinh vien voi ID <" + " " + id);
         }
+    }
+
+    public void createStudent(int n) {
+        Scanner scanner = new Scanner(System.in);
+        Student student[] = new Student[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Nhap thong tin sinh vien thu " + (i + 1) + ":");
+            System.out.print("Nhap ID: ");
+            int id = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
+            System.out.print("Nhap Ten: ");
+            String name = scanner.nextLine();
+            System.out.print("Nhap Tuoi: ");
+            int age = scanner.nextInt();
+            student[i] = new Student(id, name, age);
+        }
+        scanner.close();
     }
 
 }
